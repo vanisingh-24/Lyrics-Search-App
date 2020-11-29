@@ -7,8 +7,6 @@ import Lyrics from './components/tracks/Lyrics';
 
 import {Provider} from './context';
 
-import './App.css';
-
 class App extends Component {
   render(){
     return(
