@@ -34,10 +34,10 @@ class Lyrics extends Component {
         }else{
             return(
                 <React.Fragment>
-                    <Link to="/" className="btn btn-dark btn-sm mb-4">
+                    <Link style={{fontSize: "20px", borderRadius: "20px"}} to="/" className="btn btn-dark btn-sm mb-4">
                         Go Back
                     </Link>
-                    <div className="card">
+                    <div className="card" style={{padding: "40px",fontSize: "22px", borderRadius: "20px", boxShadow: "0 5px 10px rgba(154,160,185,0.05)"}}>
                         <h5 className="card-header">
                             {track.track_name} by{' '}
                             <span className="text-secondary">{track.artist_name}</span>
@@ -49,7 +49,7 @@ class Lyrics extends Component {
                         </div>
                     </div>
 
-                    <ul className="list-group mt-3">
+                    <ul className="list-group mt-3" style={{fontSize: "28px"}}>
                         <li className="list-group-item">
                             <strong>Album ID</strong>: {track.album_id}
                         </li>

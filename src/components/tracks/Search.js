@@ -42,14 +42,14 @@ class Search extends Component {
 				{(value) => {
 					const { dispatch } = value;
 					return (
-						<div className='card mb-3'>
+						<div className='card mb-3' style={{borderRadius: "20px"}}>
 							<div className='card-body mb-4 p-4'>
-								<h3 className='display-4 text-center'>
-									<i className='fas fa-music'></i> Search For A Song
+								<h3 className='display-3 text-center' style={{fontWeight: "500"}}>
+									<i className='fas fa-music'></i><strong> Search For A Song</strong>
 								</h3>
-								<p className='lead text-center'>Get the lyrics for any song</p>
+								<p className='lead text-center' style={{fontSize: "20px", fontWeight: "bold"}}>Get the lyrics for any song</p>
 								<form onSubmit={this.handleSubmit.bind(this, dispatch)}>
-									<div className='form-group'>
+									<div className='form-group' style={{color: "#495057", borderRadius: "0.25rem", fontWeight: "400"}}>
 										<input
 											type='text'
 											className='form-control input-lg'
@@ -59,8 +59,8 @@ class Search extends Component {
 											onChange={this.handleChange}
 										/>
 									</div>
-									<button className='btn btn-primary btn-lg btn-block search-btn'>
-										Get Track Lyrics
+									<button className='btn btn-primary btn-lg btn-block search-btn' style={{borderRadius: "20px"}}>
+										<strong>Get Track Lyrics</strong>
 									</button>
 								</form>
 							</div>
